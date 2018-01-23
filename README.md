@@ -68,4 +68,4 @@ new Vue({
 * `fps`: default is `30`
 * `autoplay`: default is `true`
 * `yoyo`: default is `false`
-* `id`: default is `sprite`
+* `id`: default is `vue-sprite`

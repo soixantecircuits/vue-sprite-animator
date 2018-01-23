@@ -1,6 +1,11 @@
 <template lang="html">
   <div class="vue-sprite">
-    <canvas :id='id' :width="width" :height="height" ref="vue-sprite-canvas"></canvas>
+    <canvas
+      :id='id'
+      :width="width"
+      :height="height"
+      ref="vue-sprite-canvas"
+    ></canvas>
   </div>
 </template>
 
@@ -32,7 +37,7 @@ export default {
     },
     id: {
       type: String,
-      default: 'sprite'
+      default: 'vue-sprite'
     }
   },
   data () {
