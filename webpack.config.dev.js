@@ -2,13 +2,15 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: path.join(__dirname, '/src/index.js'),
+  entry: path.join(__dirname, '/example/src/main.js'),
   output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'vue-sprite-animator.js',
-    library: 'SpriteAnimator',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    path: path.join(__dirname, '/example/dist'),
+    filename: 'index.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '/example/dist'),
+    compress: true,
+    port: 9000
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -31,6 +33,12 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style!css'
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [{
+          loader: 'file-loader'
+        }]
       }
     ]
   },
