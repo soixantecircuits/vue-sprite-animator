@@ -1,9 +1,12 @@
 {
   "name": "vue-sprite-animator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/vue-sprite-animator.min.js",
-  "keywords": ["vue", "spritesheet"],
+  "keywords": [
+    "vue",
+    "spritesheet"
+  ],
   "author": "hugohil",
   "license": "MIT",
   "scripts": {
